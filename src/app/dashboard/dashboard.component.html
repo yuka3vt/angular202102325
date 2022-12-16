@@ -1,19 +1,19 @@
-<div class="wrapper dark-mode">
-  <app-header></app-header>
-  <app-sidebar moduleName="dashboard"></app-sidebar>
-  
-  <!-- Content Wrapper. Contains page content -->
+<div class="wrapper">
+<app-header></app-header>
+<app-sidebar moduleName="dashboard"></app-sidebar>
+<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Dashboard</h1>
+          <h1 class="m-0">Menu 1</h1>
+          <p>Yuka Wardana(202102325)</p>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/dashboard']">Home</a></li>
             <li class="breadcrumb-item active">Dashboard v1</li>
           </ol>
         </div><!-- /.col -->
@@ -38,7 +38,7 @@
             <div class="icon">
               <i class="ion ion-bag"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            <a class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -53,7 +53,7 @@
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            <a  class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -68,7 +68,7 @@
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            <a  class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -83,7 +83,7 @@
             <div class="icon">
               <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            <a  class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -219,7 +219,7 @@
               <div class="direct-chat-contacts">
                 <ul class="contacts-list">
                   <li>
-                    <a href="#">
+                    <a >
                       <img class="contacts-list-img" src="assets/dist/img/user1-128x128.jpg" alt="User Avatar">
 
                       <div class="contacts-list-info">
@@ -234,7 +234,7 @@
                   </li>
                   <!-- End Contact Item -->
                   <li>
-                    <a href="#">
+                    <a >
                       <img class="contacts-list-img" src="assets/dist/img/user7-128x128.jpg" alt="User Avatar">
 
                       <div class="contacts-list-info">
@@ -249,7 +249,7 @@
                   </li>
                   <!-- End Contact Item -->
                   <li>
-                    <a href="#">
+                    <a >
                       <img class="contacts-list-img" src="assets/dist/img/user3-128x128.jpg" alt="User Avatar">
 
                       <div class="contacts-list-info">
@@ -264,7 +264,7 @@
                   </li>
                   <!-- End Contact Item -->
                   <li>
-                    <a href="#">
+                    <a >
                       <img class="contacts-list-img" src="assets/dist/img/user5-128x128.jpg" alt="User Avatar">
 
                       <div class="contacts-list-info">
@@ -279,7 +279,7 @@
                   </li>
                   <!-- End Contact Item -->
                   <li>
-                    <a href="#">
+                    <a >
                       <img class="contacts-list-img" src="assets/dist/img/user6-128x128.jpg" alt="User Avatar">
 
                       <div class="contacts-list-info">
@@ -294,7 +294,7 @@
                   </li>
                   <!-- End Contact Item -->
                   <li>
-                    <a href="#">
+                    <a >
                       <img class="contacts-list-img" src="assets/dist/img/user8-128x128.jpg" alt="User Avatar">
 
                       <div class="contacts-list-info">
@@ -338,11 +338,11 @@
 
               <div class="card-tools">
                 <ul class="pagination pagination-sm">
-                  <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
-                  <li class="page-item"><a href="#" class="page-link">1</a></li>
-                  <li class="page-item"><a href="#" class="page-link">2</a></li>
-                  <li class="page-item"><a href="#" class="page-link">3</a></li>
-                  <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+                  <li class="page-item"><a  class="page-link">&laquo;</a></li>
+                  <li class="page-item"><a  class="page-link">1</a></li>
+                  <li class="page-item"><a  class="page-link">2</a></li>
+                  <li class="page-item"><a  class="page-link">3</a></li>
+                  <li class="page-item"><a  class="page-link">&raquo;</a></li>
                 </ul>
               </div>
             </div>
@@ -575,10 +575,10 @@
                     <i class="fas fa-bars"></i>
                   </button>
                   <div class="dropdown-menu" role="menu">
-                    <a href="#" class="dropdown-item">Add new event</a>
-                    <a href="#" class="dropdown-item">Clear events</a>
+                    <a  class="dropdown-item">Add new event</a>
+                    <a  class="dropdown-item">Clear events</a>
                     <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">View calendar</a>
+                    <a  class="dropdown-item">View calendar</a>
                   </div>
                 </div>
                 <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
@@ -606,7 +606,4 @@
   </section>
   <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
-
-  <app-footer></app-footer>
-</div>
+<app-footer></app-footer>

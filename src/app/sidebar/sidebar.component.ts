@@ -1,10 +1,22 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Renderer2,AfterViewInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+declare const $:any;
+declare const Plugin:any;
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
-export class SidebarComponent  {
+export class SidebarComponent  implements AfterViewInit {
   @Input() moduleName: string = "";
+
+  constructor(private router : Router,private renderer: Renderer2) { 
+  }
+  ngAfterViewInit(): void {
+    $('[data-widget="treeview"]').Treeview("init");
+    Plugin.class($(this))
+  }
+  userId = sessionStorage.getItem("userId");
 }
