@@ -6,6 +6,7 @@ import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
+import { ForexComponent } from './forex/forex.component';
 import { OtentikasiGuard } from './otentikasi.guard';
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: "login", component:LoginComponent},
   {path: "register", component:RegisterComponent},
   {path: "mahasiswa",component:MahasiswaComponent, canActivate : [OtentikasiGuard]},
+  {path: "forex", component:ForexComponent, canActivate : [OtentikasiGuard]},
   {path: "",redirectTo: "login",pathMatch: "full"}
 ];
 
