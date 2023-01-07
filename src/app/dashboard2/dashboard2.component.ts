@@ -1,5 +1,6 @@
 import { Component, AfterViewInit,Renderer2 } from '@angular/core';
 
+
 @Component({
   selector: 'app-dashboard2',
   templateUrl: './dashboard2.component.html',

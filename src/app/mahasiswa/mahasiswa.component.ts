@@ -3,7 +3,6 @@ import { Component, OnInit,AfterViewInit, Renderer2} from '@angular/core';
 
 declare const $ : any;
 
-
 @Component({
   selector: 'app-mahasiswa',
   templateUrl: './mahasiswa.component.html',

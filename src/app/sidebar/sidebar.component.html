@@ -65,18 +65,26 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a [routerLink]="['/mahasiswa']"routerLinkActive="router-link-active" class="nav-link {{ moduleName=='mahasiswa? 'active':''}}">
-            <i class="fa fa-users" aria-hidden="true"></i>
+          <a [routerLink]="['/mahasiswa']"routerLinkActive="router-link-active" class="nav-link {{ moduleName=='mahasiswa'?'active':''}}">
+            <i class="nav-icon fa fa-users" aria-hidden="true"></i>
             <p>
               Mahasiswa
             </p>
           </a>
         </li>
         <li class="nav-item">
-          <a [routerLink]="['/forex']"routerLinkActive="router-link-active" class="nav-link {{ moduleName=='forex? 'active':''}}">
-            <i class="fa fa-users" aria-hidden="true"></i>
+          <a [routerLink]="['/forex']"routerLinkActive="router-link-active" class="nav-link {{ moduleName=='forex'?'active':''}}">
+            <i class="nav-icon far fa-money-bill-alt" aria-hidden="true"></i>
             <p>
               Forex
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/cuaca']"routerLinkActive="router-link-active" class="nav-link {{ moduleName=='cuaca'?'active':''}}">
+            <i class="nav-icon fas fa-cloud-rain"></i>
+            <p>
+              Cuaca
             </p>
           </a>
         </li>
